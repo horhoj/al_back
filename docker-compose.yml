@@ -1,0 +1,10 @@
+services:
+  node:
+    build:
+      dockerfile: ./node-dockerfile-prod
+    container_name: node-app
+    restart: always
+    ports:
+      - "8080:8080"
+
+
